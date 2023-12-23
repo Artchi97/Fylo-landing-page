@@ -1,0 +1,402 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+:root {
+  --veryDarkBlue: hsl(243, 87%, 12%);
+  --desaturatedBlue: hsl(238, 22%, 44%);
+  --brightBlue: hsl(224, 93%, 58%);
+  --moderateCyan: hsl(170, 45%, 43%);
+  --lightGrayishBlue: hsl(240, 75%, 98%);
+  --lightGray: hsl(0, 0%, 75%);
+}
+
+body {
+  height: 1vh;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 375px;
+}
+
+header {
+  margin-bottom: 72px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+nav img {
+  width: 24%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 12px;
+  font-size: 12px;
+}
+
+.mainSection {
+  padding: 24px;
+}
+
+.mainSectionImage {
+  margin-bottom: 32px;
+}
+
+.mainSectionImage img {
+  width: 100%;
+}
+
+.mainContent h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.mainContent p {
+  font-size: 12px;
+  line-height: 1.2rem;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.mainContent form {
+  text-align: center;
+}
+
+.mainContent form input {
+  width: 100%;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  border: 1px solid black;
+}
+
+.email {
+  width: 100%;
+  font-size: 12px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--brightBlue);
+  color: white;
+  font-weight: 500;
+  margin-bottom: 112px;
+}
+
+.Upper {
+  background-image: url(images/bg-curve-mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.Lower {
+  background-color: var(--lightGrayishBlue);
+}
+
+.mainContent h2 {
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.Lower p {
+  text-align: left;
+}
+.greenText p {
+  float: left;
+  margin-right: 5px;
+  color: var(--moderateCyan);
+  margin-bottom: 5px;
+}
+
+.greenText img {
+  float: left;
+  margin-top: 2px;
+}
+
+.greenText {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 0 auto;
+  border-bottom: 0.1rem solid var(--moderateCyan);
+}
+
+.burtonKyle {
+  margin-top: 64px;
+  background-color: white;
+  width: 80%;
+  margin: 64px auto 80px auto;
+  padding: 16px 24px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px var(--lightGray);
+}
+
+.burtonKyle p {
+  margin-top: 8px;
+}
+
+.burtonLowSection img {
+  width: 17%;
+  border-radius: 50%;
+  float: left;
+  margin-right: 8px;
+}
+
+.burtonLowSection p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.burtonLowSection span {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.name::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lowSection {
+  background-color: var(--desaturatedBlue);
+  color: white;
+  padding: 56px 24px 56px 24px;
+  text-align: center;
+}
+
+.lowSection h2 {
+  margin-bottom: 24px;
+}
+
+.lowSection p {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.lowSection input {
+  width: 65%;
+  margin-bottom: 8px;
+  padding: 8px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px var(--lightGray);
+}
+
+.lowSection button {
+  width: 65%;
+  border-radius: 0;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: var(--veryDarkBlue);
+  color: white;
+  padding: 56px 24px;
+}
+
+footer > img {
+  margin-bottom: 32px;
+}
+
+.phone,
+.emailAdress {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+:is(.phone, .emailAdress) p {
+  font-size: 12px;
+}
+
+.phone {
+  margin-bottom: 16px;
+}
+
+.leftList,
+.rightList {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.leftList li,
+.rightList li {
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.mediaLogo {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook,
+.instagram,
+.twitter {
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facebook {
+  padding: 8px 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1440px) {
+  #container {
+    max-width: 1440px;
+  }
+
+  nav img {
+    width: 12%;
+  }
+
+  .Upper {
+    display: flex;
+    align-items: center;
+    padding-bottom: 400px;
+    justify-content: space-between;
+  }
+
+  .mainSectionImage img {
+    width: 80%;
+  }
+
+  .mainSectionImage {
+    order: 2;
+    width: 50%;
+    text-align: right;
+  }
+
+  .mainSection .mainContent {
+    width: 550px;
+  }
+
+  .mainContent h1,
+  .mainContent h2 {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .mainSection .mainContent p {
+    text-align: left;
+  }
+
+  .upperForm {
+    display: flex;
+    gap: 12px;
+  }
+
+  .upperForm input {
+    padding: 6px;
+    width: 60%;
+    align-self: flex-start;
+    height: 32px;
+    margin-top: 1px;
+  }
+
+  .upperForm .email {
+    width: 40%;
+  }
+
+  .Lower {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -72px;
+  }
+
+  .greenText {
+    margin-left: 0;
+  }
+
+  .burtonKyle {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  .lowSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .lowSectionContent {
+    width: 40%;
+  }
+
+  .lowSectionContent h2,
+  .lowSectionContent p {
+    text-align: left;
+  }
+
+  .lowSectionContent h2 {
+    font-size: 32px;
+  }
+
+  .lowSection form {
+    width: 60%;
+  }
+
+  .lowerForm {
+    margin: 0 auto;
+  }
+
+  .lowerForm input {
+    width: 50%;
+  }
+
+  .lowerForm button {
+    width: 20%;
+    margin-left: -250px;
+    margin-top: 5px;
+  }
+
+  .footerFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .mediaLogo {
+    margin-right: 20%;
+  }
+
+  footer {
+    padding-top: 80px;
+  }
+}
